@@ -1,0 +1,206 @@
+/* Shuvakor Bhowmik Durjoy — Portfolio Styles (Comet Editorial Aesthetic) */
+:root {
+  --bg-cream: #F5F3EB;
+  --bg-card: #EAE7DC;
+  --bg-card-sage: #E6ECE8;
+  --bg-surface: #FFFFFF;
+  --text-dark: #141616;
+  --text-muted: #575B5A;
+  --accent-teal: #2C7A80;
+  --accent-teal-hover: #216065;
+  --cosmic-bg: #0A1118;
+  --border-subtle: rgba(20, 22, 22, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-editorial {
+  font-family: 'Instrument Serif', Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.04;
+}
+
+/* Orbital Background Lines */
+.orbital-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 3D Cosmic & Striped Spheres inspired by reference video */
+.sphere-teal-cosmic {
+  background: radial-gradient(circle at 30% 30%, #4FA3A8 0%, #1F5B63 38%, #0C252E 72%, #050B0F 100%);
+  box-shadow: inset -12px -12px 28px rgba(0, 0, 0, 0.65), inset 6px 6px 18px rgba(145, 224, 230, 0.28), 0 20px 45px rgba(12, 37, 46, 0.22);
+}
+
+.sphere-striped-copper {
+  background: repeating-linear-gradient(
+    -28deg,
+    #C86D44 0px,
+    #E2956B 14px,
+    #256E75 14px,
+    #1B4E54 28px,
+    #D6855A 28px,
+    #8C3F23 44px
+  );
+  position: relative;
+  box-shadow: inset -10px -14px 26px rgba(0,0,0,0.6), inset 8px 8px 18px rgba(255,230,200,0.35), 0 16px 32px rgba(20,22,22,0.18);
+}
+
+.sphere-striped-amber {
+  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.22), transparent 55%),
+              linear-gradient(135deg, #E39765 0%, #C6663E 45%, #3B2318 100%);
+  box-shadow: inset -10px -10px 24px rgba(0,0,0,0.55), 0 12px 26px rgba(198,102,62,0.22);
+}
+
+.sphere-obsidian {
+  background: radial-gradient(circle at 32% 28%, #52626B 0%, #1B242A 45%, #070A0C 90%);
+  box-shadow: inset -8px -8px 20px rgba(0,0,0,0.8), 0 12px 24px rgba(0,0,0,0.25);
+}
+
+.sphere-pearl {
+  background: radial-gradient(circle at 30% 28%, #FFFFFF 0%, #E7E4D8 48%, #B5B09E 85%, #847F6E 100%);
+  box-shadow: inset -12px -12px 28px rgba(60,56,45,0.35), 0 18px 38px rgba(0,0,0,0.25);
+}
+
+/* Cosmic Nebula Container */
+.cosmic-card {
+  background:
+    radial-gradient(ellipse at 20% 15%, rgba(62, 142, 150, 0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 82% 25%, rgba(209, 118, 72, 0.32) 0%, transparent 52%),
+    radial-gradient(ellipse at 50% 85%, rgba(44, 122, 128, 0.28) 0%, transparent 60%),
+    linear-gradient(180deg, #090E14 0%, #111B24 52%, #0B1219 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 26px 60px rgba(10, 17, 24, 0.28);
+}
+
+.cosmic-stars {
+  background-image:
+    radial-gradient(1.5px 1.5px at 18% 22%, rgba(255,255,255,0.85) 50%, transparent 100%),
+    radial-gradient(1px 1px at 36% 68%, rgba(255,255,255,0.7) 50%, transparent 100%),
+    radial-gradient(2px 2px at 74% 32%, rgba(255,240,220,0.9) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 88% 76%, rgba(165,230,240,0.8) 50%, transparent 100%),
+    radial-gradient(1px 1px at 62% 14%, rgba(255,255,255,0.75) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 12% 82%, rgba(255,220,190,0.75) 50%, transparent 100%);
+}
+
+/* Comet Signature Pill CTA Button */
+.comet-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #141616;
+  color: #FFFFFF;
+  padding: 8px 24px 8px 8px;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.98rem;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, background-color 0.2s ease;
+  box-shadow: 0 10px 26px rgba(20, 22, 22, 0.16);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.comet-cta-btn:hover {
+  transform: translateY(-2px);
+  background-color: #222626;
+  box-shadow: 0 14px 32px rgba(20, 22, 22, 0.24);
+}
+
+.comet-cta-btn .icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  color: #141616;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.22s ease;
+}
+
+.comet-cta-btn:hover .icon-circle {
+  transform: scale(1.06);
+}
+
+.comet-cta-light {
+  background-color: #F5F3EB;
+  color: #141616;
+}
+
+.comet-cta-light:hover {
+  background-color: #FFFFFF;
+}
+
+.comet-cta-light .icon-circle {
+  background-color: #141616;
+  color: #FFFFFF;
+}
+
+/* Floating Glass Pills (Summarize / Ask / Translate) */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(20, 22, 22, 0.08);
+  box-shadow: 0 12px 28px rgba(20, 22, 22, 0.12);
+  transition: all 0.2s ease;
+}
+
+.glass-pill:hover, .glass-pill.active-pill {
+  background: #FFFFFF;
+  transform: translateY(-2px) scale(1.02);
+  border-color: var(--accent-teal);
+  box-shadow: 0 16px 32px rgba(44, 122, 128, 0.18);
+}
+
+/* Editorial Feature Cards ("Do anything with...") */
+.feature-stack-card {
+  background: linear-gradient(180deg, #EFECE2 0%, #EAE6D9 100%);
+  border: 1px solid rgba(20, 22, 22, 0.07);
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(20, 22, 22, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-stack-card.sage-tint {
+  background: linear-gradient(180deg, #E5EFEA 0%, #DCE8E2 100%);
+}
+
+.feature-stack-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(20, 22, 22, 0.08);
+}
+
+/* FAQ Accordion */
+.faq-card {
+  background-color: #EFECE2;
+  border: 1px solid rgba(20, 22, 22, 0.06);
+  border-radius: 20px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-card:hover {
+  background-color: #EAE6D8;
+}
+
+/* Print CV mode */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
